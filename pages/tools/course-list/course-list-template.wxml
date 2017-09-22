@@ -1,0 +1,9 @@
+<!--pages/tools/course-list/course-list-template.wxml-->
+<template name="course-list">
+  <view class="movie-wrapper" bindtap="bindMovieDetail" data-id="{{id}}">
+    <view class="movie-content">
+      <text class="name">{{name}}</text>
+      <text class="name">{{course_place}}</text>
+    </view>
+  </view>
+</template>

@@ -10,56 +10,56 @@
 .rating-star {
   content: "";
   display: inline-block;
-  width: 110rpx;
-  height: 22rpx;
+  width: 55px;
+  height: 11px;
   position: absolute;
   background-repeat: no-repeat;
   background-image:url(http://chuantu.biz/t6/46/1505191678x213968379.png);
-  background-size: 110rpx;
+  background-size: 55px;
 }
 
 .allstar50 {
-  background-position: 0rpx 0rpx;
+  background-position: 0px 0px;
 }
 
 .allstar45 {
-  background-position: 0rpx -22rpx;
+  background-position: 0px -11px;
 }
 
 .allstar40 {
-  background-position: 0rpx -44rpx;
+  background-position: 0px -22px;
 }
 
 .allstar35 {
-  background-position: 0rpx -66rpx;
+  background-position: 0px -33px;
 }
 
 .allstar30 {
-  background-position: 0rpx -88rpx;
+  background-position: 0px -44px;
 }
 
 .allstar25 {
-  background-position: 0rpx -110rpx;
+  background-position: 0px -55px;
 }
 
 .allstar20 {
-  background-position: 0rpx -132rpx;
+  background-position: 0px -66px;
 }
 
 .allstar15 {
-  background-position: 0rpx -154rpx;
+  background-position: 0px -77px;
 }
 
 .allstar10 {
-  background-position: 0rpx -176rpx;
+  background-position: 0px -88px;
 }
 
 .allstar5 {
-  background-position: 0rpx -198rpx;
+  background-position: 0px -99px;
 }
 
 .allstar0 {
-  background-position: 0rpx -220rpx;
+  background-position: 0px -110px;
 }
 
 .rating-average {

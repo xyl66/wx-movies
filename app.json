@@ -2,12 +2,35 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/movie/index"
+    "pages/movie/index",
+    "pages/movie-detail/index",
+    "pages/tools/tool-index",
+    "pages/tools/idcard/idcard-index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "豆瓣电影",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#FFA54F",
+    "navigationBarTitleText": "去看电影吧",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/tools/tool-index",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "小工具"
+      }
+    ]
   }
 }

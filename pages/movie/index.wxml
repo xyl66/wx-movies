@@ -13,7 +13,7 @@
     </view>
     <view class="session-content session-content-spacing">
       <scroll-view class="movie-scroll" scroll-x="true">
-        <block wx:for="{{inTheaters.movies}}" wx:for-item="item">
+        <block wx:for="{{inTheaters.movies}}" wx:key="id" wx:for-item="item">
          <template is="movie-host-list" data="{{...item}}" />
         </block>
       </scroll-view>
@@ -26,7 +26,7 @@
     </view>
     <view class="session-content session-content-spacing">
       <scroll-view class="movie-scroll" scroll-x="true">
-        <block wx:for="{{comingSoon.movies}}" wx:for-item="item">
+        <block wx:for="{{comingSoon.movies}}" wx:key="id"  wx:for-item="item">
          <template is="movie-host-list" data="{{...item}}" />
         </block>
       </scroll-view>

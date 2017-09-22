@@ -114,5 +114,13 @@ Page({
       movies: movies
     }
     this.setData(readyData)
+  },
+  /** 跳转电影详情页 */
+  bindMovieDetail:function(event){
+    console.log(event)
+    var id=event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '../movie-detail/index?id='+id
+    })
   }
 })

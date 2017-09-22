@@ -1,0 +1,9 @@
+/* pages/tools/tool-index.wxss */
+.section-btn button{
+  background: #FFA54F;
+  color: white;
+  font-size: 28rpx;
+  width: 240rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}

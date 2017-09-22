@@ -1,0 +1,71 @@
+<!--pages/movie-detail/index.wxml-->
+<view class='content'>
+  <view class='section-poster'>
+    <view class='poster-background'>
+      <image class='img' mode='widthFix' src="{{movie.images.large}}"></image>
+      <view class='poster-cover'></view>
+    </view>
+    <view class='section-back-cover'>
+      <block>
+        <view class='poster'>
+          <image mode='widthFix' src='{{movie.images.large}}'></image>
+        </view>
+        <view class='section-title-main'>
+          <view class='section-title'>
+            <text class='title'>{{movie.title}}</text>
+          </view>
+          <view class='section-title section-origin-title'>
+            <text class='title origin-title'>{{movie.originalTitle}}</text>
+          </view>
+          <view class='section-rating'>
+            <text class="average">{{movie.rating.average}}</text>
+            <view class='right'>
+              <view class="rating">
+                <view class="rating-star allstar{{movie.rating.stars | 0}}"></view>
+              </view>
+              <text class="ratings_count">{{movie.ratingsCount}}评价</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='section-summary'>
+    <view class='genres'>
+    <text>{{movie.genres}}</text>
+    </view>
+    <view class='countries'>
+    <text>{{movie.year}}年 {{movie.countries}}</text>
+    </view>
+    <view class='directorsAndCasts'>
+    <text class='name' wx:for="{{movie.directorsAndCasts}}">{{item.name}}</text>
+    </view>
+  </view>
+  <view class='section-wish-to'>
+  <text class="wish-btn" catchtap="handleWishtap">想看</text>
+    <text class="do-btn" data-id="{{movie.id}}" catchtap="handleDotap">看过</text>
+  </view>
+  <view class='section-desc'>
+    <view class='desc-title'>
+      <text>{{movie.title}}的剧情简介</text>
+    </view>
+    <view class='desc-content'>
+      <text>{{movie.summary}}</text>
+    </view>
+  </view>
+  <view class="session-directors-casts">
+    <view class="directors-casts-title">
+      <text>影人</text>
+    </view>
+    <scroll-view class="directors-casts-scroll" scroll-x="true">
+      <block wx:for="{{movie.directorsAndCasts}}" wx:for-item="item">
+        <view class="directors-casts-wrapper" bindtap="handleCelebrity" data-id="{{item.id}}" data-avatar="{{item.avatars.large}}">
+          <view class="directors-casts-content">
+            <image class="image" lazy-load="true" src="{{item.avatars.large}}"></image>
+            <text class="name">{{item.name}}</text>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/tools/tool-index.wxml-->
+<!--index.wxml-->
+<view class="container">
+  <view class="section-btn">
+    <button bindtap="bindIdCard">身份证查询</button>
+  </view>
+</view>
